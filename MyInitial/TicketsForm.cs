@@ -40,6 +40,9 @@ namespace Ticketing
             if (radBox.Checked)
                 { mSection = 3; }
 
+            if (checkChild.Checked)
+            { mDiscount = true; }
+
             mTicketPrice = new TicketPrice(mSection, mQuantity, mDiscount);
 
             mTicketPrice.calculatePrice();
